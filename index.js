@@ -9,8 +9,8 @@ const cors = require('cors');
 app.use(cors());
 
 // API ENDPOINTS
-app.get('/datos', (req, res) => {
-	const fileTypes = [ 'csv', 'jpg', 'pdf', 'png', 'xslx' ];
+app.get('/api', (req, res) => {
+	const fileTypes = [ 'csv', 'xslx' ];
 
 	// Check if the right request is coming through for the file type
 	return (
